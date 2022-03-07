@@ -1,2 +1,2 @@
 #!/bin/bash
-cd / && mv 101-gifs alx-system_engineering-devops/0x02-shell_redirections && cd alx-system_engineering-devops/0x02-shell_redirections 
+cd / && mv 102-acrostic alx-system_engineering-devops/0x02-shell_redirections && cd alx-system_engineering-devops/0x02-shell_redirections 
