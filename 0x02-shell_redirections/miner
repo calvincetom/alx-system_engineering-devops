@@ -1,2 +1,2 @@
 #!/bin/bash
-cd / && mv 18-letteronly alx-system_engineering-devops/0x02-shell_redirections && cd alx-system_engineering-devops/0x02-shell_redirections 
+cd / && mv 19-AZ alx-system_engineering-devops/0x02-shell_redirections && cd alx-system_engineering-devops/0x02-shell_redirections 
