@@ -1,2 +1,2 @@
 #!/bin/bash
-cd / && mv 11-directories alx-system_engineering-devops/0x02-shell_redirections && cd alx-system_engineering-devops/0x02-shell_redirections 
+cd / && mv 12-newest_files alx-system_engineering-devops/0x02-shell_redirections && cd alx-system_engineering-devops/0x02-shell_redirections 
