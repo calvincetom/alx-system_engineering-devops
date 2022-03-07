@@ -1,2 +1,2 @@
 #!/bin/bash
-cd / && mv 10-no_more_js alx-system_engineering-devops/0x02-shell_redirections && cd alx-system_engineering-devops/0x02-shell_redirections 
+cd / && mv 11-directories alx-system_engineering-devops/0x02-shell_redirections && cd alx-system_engineering-devops/0x02-shell_redirections 
