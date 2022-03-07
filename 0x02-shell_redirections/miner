@@ -1,2 +1,0 @@
-#!/bin/bash
-cd / && mv 103-the_biggest_fan alx-system_engineering-devops/0x02-shell_redirections && cd alx-system_engineering-devops/0x02-shell_redirections 
