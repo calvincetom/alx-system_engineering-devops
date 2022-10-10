@@ -5,7 +5,7 @@ sudo apt-get -y install haproxy
 sudo sed -i '/errorfile 504/a listen calvincetom' /etc/haproxy/haproxy.cfg
 sudo sed -i '/listen calvincetom/a         bind :80' /etc/haproxy/haproxy.cfg
 sudo sed -i '/bind :80/a         mode http' /etc/haproxy/haproxy.cfg
-sudo sed -i '/mode http/a         server 29576-web-01 44.210.149.48:80 check' /etc/haproxy/haproxy.cfg
-sudo sed -i '/server 29576-web-01 44.210.149.48:80 check/a         server 29576-web-02 3.235.178.63:80 check' /etc/haproxy/haproxy.cfg
+sudo sed -i '/mode http/a         server 29576-web-01 3.215.190.20:80
+sudo sed -i '/server 29576-web-01 3.215.190.20:80 check/a         server 29576-web-02 3.234.209.171:80 check' /etc/haproxy/haproxy.cfg
 sudo sed -i '/#EXTRAOPTS="-de -m 16"/a ENABLED=1' /etc/default/haproxy
 service haproxy start
