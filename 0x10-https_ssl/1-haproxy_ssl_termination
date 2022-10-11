@@ -34,24 +34,23 @@ defaults
 	errorfile 504 /etc/haproxy/errors/504.http
 
 listen calvincetom
-bind :80
-mode http
-server 29576-web-01 44.210.149.48:80 check
-server 29576-web-02 3.235.181.49:80 check
+	bind :80
+	mode http
+	balance roundrobin
+	server 29576-web-01 3.215.190.20:80 check
+	server 29576-web-02 3.234.209.171:80 check
 
-frontend http
-        bind *:80
+frontend www-http
+        bind :80
         http-request set-header X-Forwarded-Proto http
         default_backend web-backend
 
 frontend www-https
-        bind *:443 ssl crt /etc/letsencrypt/live/www.calvincetom.tech/
+        bind :443 ssl crt /etc/letsencrypt/live/www.calvincetom.tech/fullchain.pem
         http-request set-header X-Forwarded-Proto https
         default_backend web-backend
 
 backend web-backend
-        balance roundrobin
         redirect scheme https if !{ ssl_fc }
-        server 29576-web-01 44.210.149.48:80 check
-        server 29576-web-02 100.24.210.150:80 check
-
+        server 29576-web-01 3.215.190.20:80 check
+        server 29576-web-02 3.234.209.171:80 check
