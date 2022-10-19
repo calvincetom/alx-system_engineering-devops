@@ -1,12 +1,4 @@
-Employee Leanne Graham is done with tasks(11/20):
-	 et porro tempora
-	 quo adipisci enim quam ut ab
-	 illo est ratione doloremque quia maiores aut
-	 vero rerum temporibus dolor
-	 ipsa repellendus fugit nisi
-	 repellendus sunt dolores architecto voluptatum
-	 ab voluptatum amet voluptas
-	 accusamus eos facilis sint et aut voluptatem
-	 quo laboriosam deleniti aut qui
-	 molestiae ipsa aut voluptatibus pariatur dolor nihil
-	 ullam nobis libero sapiente ad optio sint
+Traceback (most recent call last):
+  File "/home/calvo/alx-system_engineering-devops/0x15-api/0-gather_data_from_an_API.py", line 8, in <module>
+    user = requests.get(url + "users/{}".format(sys.argv[1])).json()
+IndexError: list index out of range
