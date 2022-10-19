@@ -18,7 +18,7 @@ if __name__ == "__main__":
     completed = 0
 
     for task in todos.json():
-        if task.get('userId') == int(userId):
+        if task.get('userId') == userId:
             totalTasks += 1
             if task.get('completed'):
                 completed += 1
@@ -27,4 +27,4 @@ if __name__ == "__main__":
           .format(name, completed, totalTasks))
 
     print('\n'.join(["\t " + task.get('title') for task in todos.json()
-          if task.get('userId') == int(userId) and task.get('completed')]))i
+          if task.get('userId') == int(userId) and task.get('completed')]))
